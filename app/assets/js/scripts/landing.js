@@ -230,11 +230,11 @@ const refreshServerStatus = async function(fade = false){
 
         const servStat = await getServerStatus(47, serverURL.hostname, Number(serverURL.port))
         console.log(servStat)
-        pLabel = 'PLAYERS'
+        pLabel = 'NOOBS'
         pVal = servStat.players.online + '/' + servStat.players.max
 
     } catch (err) {
-        loggerLanding.warn('Unable to refresh server status, assuming offline.')
+        loggerLanding.warn('Something is wrong here... uhhh maybe the server is offline?')
         loggerLanding.debug(err)
     }
     if(fade){
@@ -289,7 +289,7 @@ let extractListener
  */
 function asyncSystemScan(mcVersion, launchAfter = true){
 
-    setLaunchDetails('Please wait..')
+    setLaunchDetails('Please Wait..... PLEASE!')
     toggleLaunchArea(true)
     setLaunchPercentage(0, 100)
 

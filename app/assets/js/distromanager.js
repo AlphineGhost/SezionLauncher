@@ -520,6 +520,7 @@ exports.Types = {
     LiteMod: 'LiteMod',
     File: 'File',
     VersionManifest: 'VersionManifest'
+    /*ClientKey: 'ClientKey' < Will add support for a key system */
 }
 
 let DEV_MODE = false
